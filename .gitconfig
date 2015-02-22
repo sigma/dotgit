@@ -1,3 +1,5 @@
+[core]
+	deltaBaseCacheLimit = 128m
 [color]
 	diff = auto
 	status = auto
@@ -21,7 +23,12 @@
 	email = yann.hodique@gmail.com
 [branch]
 	autosetupmerge = true
+[difftool.latex]
+        cmd = git-latexdiff "$LOCAL" "$REMOTE"
+[difftool]
+        prompt = false
 [alias]
+        ldiff = difftool -t latex
 	ci = commit
 	co = checkout
 	lc = log ORIG_HEAD.. --stat --no-merges
