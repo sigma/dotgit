@@ -48,3 +48,4 @@
 	default = matching
 [include]
         path = .gitconfig.private
+        path = .gitconfig.boxen
