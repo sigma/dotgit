@@ -20,7 +20,7 @@
         untracked = cyan
 [user]
 	name = Yann Hodique
-	email = yann.hodique@gmail.com
+	email = hodiquey@vmware.com
 [branch]
 	autosetupmerge = true
 [difftool.latex]
