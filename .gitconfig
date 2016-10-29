@@ -52,5 +52,7 @@
 	recurseSubmodules = check
 [include]
         path = .gitconfig.private
-[url "git@github.com:sigma/"]
-        pushInsteadOf = git://github.com/sigma/
+[ghq]
+	root = ~/src
+[ghq "import"]
+	starred = github-list-starred
