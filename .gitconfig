@@ -49,6 +49,7 @@
 	autosquash = true
 [push]
 	default = matching
+	recurseSubmodules = check
 [include]
         path = .gitconfig.private
 [url "git@github.com:sigma/"]
