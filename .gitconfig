@@ -1,5 +1,6 @@
 [core]
 	deltaBaseCacheLimit = 128m
+	editor = emacsclient -t -a=\\\"zile\\\"
 [color]
 	diff = auto
 	status = auto
@@ -40,6 +41,7 @@
 	new = !sh -c 'git log $1@{1}..$1@{0} "$@"'
         whois = "!sh -c 'git log -i -1 --pretty=\"format:%an <%ae>\n\" --author=\"$1\"' -"
         whatis = show -s --pretty='tformat:%h (%s, %ad)' --date=short
+        gnus = "!f() { git format-patch --thread=shallow --cover-letter -B -M --minimal -s --stdout "$@" >> ~/.git.mbox; }; f"
 [merge]
 	tool = emerge
 [rebase]
@@ -48,4 +50,5 @@
 	default = matching
 [include]
         path = .gitconfig.private
-        path = .gitconfig.boxen
+[url "git@github.com:sigma/"]
+        pushInsteadOf = git://github.com/sigma/
