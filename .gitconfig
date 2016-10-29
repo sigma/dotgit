@@ -48,4 +48,9 @@
 	default = matching
 [include]
         path = .gitconfig.private
-        path = .gitconfig.boxen
+[url "git@github.com:sigma/"]
+        pushInsteadOf = git://github.com/sigma/
+        pushInsteadOf = https://github.com/sigma/
+[url "git@github.com:vmware/"]
+        pushInsteadOf = git://github.com/vmware/
+        pushInsteadOf = https://github.com/vmware/
